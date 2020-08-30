@@ -18,7 +18,14 @@
          width: 40%;
         }
         body {
-            background-color: rgb(70, 59, 59)
+            background-color: rgb(70, 59, 59);
+            background-image: url("./gates.gif");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size:cover!important;
+            min-width: 200px;
+            min-height: 1000px;
+            width: 100%;
         }
         #topbadge{
           position: absolute;
@@ -30,21 +37,48 @@
           justify-content: center;
           text-align: center;
         }
-     
+        .lead{
+          font-size: smaller;
+        }
+        h1 {
+          font-family: georgia, times, serif;
+          color: #888;
+          text-shadow: 1px 1px 2px #999;
+          font-size: 200%;
+          padding: 10px;
+          white-space: nowrap;
+        }
+        #answer {
+          position: absolute;
+          margin-top: 50%;
+          margin-bottom: 100px;
+          left: 50%;
+          transform: translateX(-50%);
+          border: 3px solid #fff;
+          background-color: #B4B490;
+          background-color: rgba(0, 0, 0, 0.7);
+          border-radius: 7px;
+          box-shadow: 0px 0px 9px #aaa;
+          vertical-align: baseline;
+        }
+        span{
+          color: #fff
+        }
        </style>
     <title>VaxCheck</title>
   </head>
   <body>
-    <div class="main" style="position: relative; left:0; top:0;"">
-      <img id="gates" src="https://media.giphy.com/media/BvA5ZclLIrkyI/giphy.gif">
-      <h3><span class="badge badge-danger" id="topbadge">No</span></h3>
+    <div class="container" >
+      <div class="row justify-content-center" id="answer">
+        <h1><span>No,</span> there is <span>not</span> yet a COVID-19 Vaccine</h1>
+      </div>
     </div>
     <!-- <img id="gates" src="https://media.giphy.com/media/BvA5ZclLIrkyI/giphy.gif"> -->
-    <div class="jumbotron jumbotron-fluid">
+    <!-- <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <p class="lead">There is not yet a COVID19 vaccine in mass production</p>
         </div>
-      </div>
+      </div> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
